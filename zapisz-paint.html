@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rysuję w Paint i zapisuję obrazek</title>
+<style>
+  body {
+    font-family: "Comic Sans MS", "Segoe UI", sans-serif;
+    background: #fff7e6;
+    color: #233;
+    margin: 0;
+    padding: 20px;
+  }
+  .page {
+    max-width: 850px;
+    margin: auto;
+    background: white;
+    border: 6px solid #ff9800;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+  h1, h2 {
+    text-align: center;
+    color: #e65100;
+  }
+  .path {
+    background: #fff3cd;
+    border: 3px dashed #f0ad4e;
+    padding: 12px;
+    border-radius: 12px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+  }
+  .step {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    background: #fffaf0;
+    border: 3px solid #ffd699;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 15px 0;
+  }
+  .number {
+    background: #ff9800;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .tip {
+    background: #e6f9e6;
+    border-left: 8px solid #34a853;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  .warning {
+    background: #ffeaea;
+    border-left: 8px solid #e53935;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  .big {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  th, td {
+    border: 2px solid #ffd699;
+    padding: 8px;
+    text-align: center;
+  }
+  th {
+    background: #fff3e0;
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <h1>🎨 Rysuję w Paint i zapisuję obrazek</h1>
+
+  <p class="big">Otworzysz program Paint, narysujesz obrazek, a potem zapiszesz go w swoim folderze.</p>
+
+  <p>Obrazek zapiszesz w folderze, który zrobiłeś wcześniej, na przykład:</p>
+
+  <div class="path">C:\Users\WiosnaUczen\Dokumenty\AnnaKo</div>
+
+  <h2>🪜 Instrukcja krok po kroku</h2>
+
+  <div class="step">
+    <div class="number">1</div>
+    <div>
+      <p><b>Otwórz menu Start.</b></p>
+      <p>Kliknij ikonę Windows w lewym dolnym rogu ekranu.</p>
+      <p class="tip">💡 Możesz też nacisnąć klawisz z logo Windows na klawiaturze.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="number">2</div>
+    <div>
+      <p><b>Znajdź program Paint.</b></p>
+      <p>Wpisz na klawiaturze słowo:</p>
+      <div class="path">Paint</div>
+      <p>Pojawi się program <b>Paint</b>. Kliknij go myszką.</p>
+      <p class="tip">💡 Paint ma ikonkę z paletą i pędzlem.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="number">3</div>
+    <div>
+      <p><b>Narysuj cokolwiek!</b></p>
+      <p>Wybierz pędzel, ołówek albo kształt z menu u góry.</p>
+      <p>Wybierz kolor i rysuj na białej kartce w programie.</p>
+      <p>Możesz narysować kwadrat, kolo, kreskę — cokolwiek prostego chcesz.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="number">4</div>
+    <div>
+      <p><b>Zapisz swój obrazek.</b></p>
+      <p>Kliknij niebieski kwadracik z białą kartką — to przycisk <b>Zapisz</b>.</p>
+      <p>Możesz też nacisnąć jednocześnie klawisze <b>Ctrl + S</b>.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="number">5</div>
+    <div>
+      <p><b>Wybierz swój folder.</b></p>
+      <p>W oknie zapisywania po lewej stronie kliknij <b>Ten komputer</b>.</p>
+      <p>Następnie wejdź do:</p>
+      <div class="path">Dokumenty → Twój folder</div>
+      <p>Na przykład: <b>Dokumenty → AnnaKo</b>.</p>
+      <p class="warning">⚠️ Nie zapisuj obrazka na Pulpicie ani w innych folderach. Zapisz go dokładnie w swoim folderze.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="number">6</div>
+    <div>
+      <p><b>Nadaj obrazkowi nazwę.</b></p>
+      <p>W polu <b>Nazwa pliku</b> wpisz, co przedstawia rysunek.</p>
+      <p>Na przykład:</p>
+      <div class="path">MojKwadrat</div>
+      <p>albo</p>
+      <div class="path">Kolo</div>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="number">7</div>
+    <div>
+      <p><b>Kliknij Zapisz.</b></p>
+      <p>Twój obrazek jest już zapisany w Twoim folderze.</p>
+      <p class="tip">✅ Możesz teraz zamknąć Paint. Twój rysunek nie zniknie!</p>
+    </div>
+  </div>
+
+  <h2>🧠 Zapamiętaj!</h2>
+
+  <table>
+    <tr>
+      <th>Co robisz?</th>
+      <th>Jak to zrobić?</th>
+    </tr>
+    <tr>
+      <td>Otworzyć Paint</td>
+      <td>Start → wpisz „Paint” → kliknij program</td>
+    </tr>
+    <tr>
+      <td>Narysować</td>
+      <td>Wybierz pędzel lub ołówek i rysuj</td>
+    </tr>
+    <tr>
+      <td>Zapisać</td>
+      <td>Ctrl + S</td>
+    </tr>
+    <tr>
+      <td>Wybrać folder</td>
+      <td>Dokumenty → Twój folder</td>
+    </tr>
+  </table>
+
+</div>
+
+</body>
+</html>

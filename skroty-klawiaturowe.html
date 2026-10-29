@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Word — ćwiczymy skróty klawiaturowe</title>
+<style>
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    padding: 20px;
+    background: #edf5ff;
+    color: #24364b;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 20px;
+    line-height: 1.65;
+  }
+
+  main {
+    max-width: 920px;
+    margin: auto;
+    padding: 30px;
+    background: white;
+    border: 5px solid #4279cc;
+    border-radius: 24px;
+  }
+
+  h1, h2, h3 {
+    color: #214f92;
+    line-height: 1.3;
+  }
+
+  h1 { text-align: center; font-size: 2rem; }
+  h2 { margin-top: 36px; font-size: 1.5rem; }
+  h3 { margin-top: 0; font-size: 1.2rem; }
+
+  .intro, .tip, .warning, .example {
+    padding: 16px 20px;
+    margin: 18px 0;
+    border-radius: 12px;
+  }
+
+  .intro { background: #e9f2ff; }
+
+  .tip {
+    background: #eaf8ec;
+    border-left: 6px solid #40844b;
+  }
+
+  .warning {
+    background: #fff3d6;
+    border-left: 6px solid #c58b12;
+  }
+
+  .example {
+    background: #fff9e8;
+    border: 2px dashed #be8a1c;
+    text-align: center;
+    overflow-wrap: anywhere;
+  }
+
+  .step {
+    margin: 20px 0;
+    padding: 22px;
+    border: 2px solid #cbdcf0;
+    border-radius: 16px;
+    break-inside: avoid;
+  }
+
+  .number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 38px;
+    height: 38px;
+    padding: 0 8px;
+    margin-right: 8px;
+    border-radius: 50%;
+    background: #285ea8;
+    color: white;
+  }
+
+  kbd {
+    display: inline-block;
+    padding: 2px 9px;
+    background: white;
+    color: #142c4c;
+    border: 2px solid #899bb1;
+    border-bottom-width: 4px;
+    border-radius: 6px;
+    font: inherit;
+    white-space: nowrap;
+  }
+
+  li { margin: 10px 0; }
+
+  .copy-text {
+    width: 100%;
+    min-height: 205px;
+    padding: 18px;
+    background: #fffdf5;
+    color: #24364b;
+    border: 3px dashed #b08220;
+    border-radius: 12px;
+    font: inherit;
+    line-height: 1.7;
+    resize: vertical;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .card {
+    padding: 16px;
+    background: #f5f9ff;
+    border: 2px solid #cbdcf0;
+    border-radius: 12px;
+  }
+
+  .card p { margin-bottom: 0; }
+
+  .checklist {
+    list-style: none;
+    padding: 0;
+  }
+
+  .checklist label {
+    display: block;
+    padding: 12px;
+    background: #f0f8ed;
+    border-radius: 8px;
+  }
+
+  input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+
+  .small { font-size: 0.85em; }
+
+  @media (max-width: 600px) {
+    body { padding: 8px; font-size: 18px; }
+    main { padding: 16px; }
+    .cards { grid-template-columns: 1fr; }
+  }
+
+  @media print {
+    body {
+      padding: 0;
+      background: white;
+      font-size: 12pt;
+    }
+
+    main { border: none; padding: 0; }
+    .copy-text { min-height: 160px; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<h1>📝 Word — moja przygoda z tekstem</h1>
+
+<div class="intro">
+  <p>Utworzysz dokument, skopiujesz historyjkę
+    i nauczysz się przenosić zdania.</p>
+  <p>Poćwiczysz też cofanie pomyłek i zapisywanie pracy.</p>
+</div>
+
+<p>Pracę zapisz w Twoim folderze:
+  imię + pierwsze dwie litery nazwiska.</p>
+
+<div class="example">
+  Przykład: Anna Kowalska → AnnaKo<br>
+  Miejsce zapisu: Dokumenty → Twój folder
+</div>
+
+<h2>⌨️ Jak naciskać skróty?</h2>
+
+<p>Przytrzymaj <kbd>Ctrl</kbd>, naciśnij drugą literę,
+  a potem puść oba klawisze.</p>
+
+<div class="example">
+  <kbd>Ctrl</kbd> + <kbd>C</kbd>
+</div>
+
+<div class="tip">
+  Nie naciskaj znaku „+”!
+  Pokazuje on tylko, które klawisze trzeba połączyć.
+</div>
+
+<h2>1. Otwórz Worda i zapisz dokument</h2>
+
+<section class="step">
+  <h3><span class="number">1</span>Otwórz Worda</h3>
+  <ol>
+    <li>Naciśnij klawisz z logo Windows.</li>
+    <li>Wpisz „Word”.</li>
+    <li>Kliknij aplikację „Word”.</li>
+    <li>Wybierz „Pusty dokument”.
+      Jeśli trzeba, najpierw kliknij „Nowy”.</li>
+  </ol>
+
+  <div class="warning">
+    Nie widzisz Worda? Poproś nauczyciela o pomoc.
+  </div>
+</section>
+
+<section class="step">
+  <h3><span class="number">2</span>Wpisz tytuł</h3>
+  <p>Kliknij białą kartkę i napisz:</p>
+  <div class="example">Moja przygoda z tekstem</div>
+  <p>Naciśnij <kbd>Enter</kbd>,
+    aby przejść do nowego akapitu.</p>
+</section>
+
+<section class="step">
+  <h3><span class="number">3</span>Zapisz dokument w swoim folderze</h3>
+  <ol>
+    <li>Kliknij „Plik” → „Zapisz jako”.</li>
+    <li>Jeśli pojawi się wybór miejsca,
+      wybierz „Ten komputer” i „Przeglądaj”.</li>
+    <li>Otwórz „Dokumenty”.</li>
+    <li>Otwórz swój folder, klikając go dwa razy.</li>
+    <li>W polu „Nazwa pliku” wpisz „MojeCwiczenia”.</li>
+    <li>Sprawdź, czy typ pliku to
+      „Dokument programu Word (*.docx)”.</li>
+    <li>Kliknij „Zapisz”.</li>
+  </ol>
+
+  <div class="example">
+    Dokumenty → Twój folder → MojeCwiczenia.docx
+  </div>
+
+  <div class="warning">
+    Użyj swojego folderu, a nie przykładowego „AnnaKo”.
+  </div>
+</section>
+
+<h2>2. Skopiuj historyjkę do Worda</h2>
+
+<section class="step">
+  <h3><span class="number">4</span>Zaznacz tekst: Ctrl + A</h3>
+  <ol>
+    <li>Wróć do tej strony w przeglądarce.</li>
+    <li>Kliknij wewnątrz ramki z historyjką.</li>
+    <li>Naciśnij <kbd>Ctrl</kbd> + <kbd>A</kbd>.</li>
+  </ol>
+
+  <p>Cała historyjka w ramce powinna się zaznaczyć.</p>
+
+  <label for="historyjka">Tekst do skopiowania:</label>
+  <textarea id="historyjka" class="copy-text"
+    readonly spellcheck="false">Kot znalazł mapę.
+Mapa prowadziła do ogrodu.
+W ogrodzie czekał mały robot.
+Razem szukali skarbu.</textarea>
+
+  <div class="warning">
+    Najpierw kliknij w ramkę!
+    Inaczej możesz zaznaczyć całą stronę
+    zamiast samej historyjki.
+  </div>
+</section>
+
+<section class="step">
+  <h3><span class="number">5</span>Kopiuj: Ctrl + C</h3>
+  <p>Gdy historyjka jest zaznaczona,
+    naciśnij <kbd>Ctrl</kbd> + <kbd>C</kbd>.</p>
+
+  <p>Komputer zapamięta tekst w schowku.
+    Historyjka zostanie na stronie.</p>
+
+  <div class="tip">
+    Schowek jest jak niewidzialna kieszonka
+    na skopiowany tekst.
+  </div>
+</section>
+
+<section class="step">
+  <h3><span class="number">6</span>Wklej: Ctrl + V</h3>
+  <ol>
+    <li>Kliknij ikonę Worda na pasku zadań.</li>
+    <li>Kliknij pusty akapit pod tytułem.</li>
+    <li>Naciśnij <kbd>Ctrl</kbd> + <kbd>V</kbd>.</li>
+  </ol>
+
+  <div class="tip">
+    Historyjka powinna pojawić się w Twoim dokumencie!
+  </div>
+</section>
+
+<h2>3. Kopiuj i przenoś zdania</h2>
+
+<section class="step">
+  <h3><span class="number">7</span>Zrób kopię zdania</h3>
+  <ol>
+    <li>Zaznacz myszką zdanie „Kot znalazł mapę.”
+      razem z kropką.</li>
+    <li>Naciśnij <kbd>Ctrl</kbd> + <kbd>C</kbd>.</li>
+    <li>Kliknij za kropką w ostatnim zdaniu historyjki.</li>
+    <li>Naciśnij <kbd>Enter</kbd>.</li>
+    <li>Naciśnij <kbd>Ctrl</kbd> + <kbd>V</kbd>.</li>
+  </ol>
+
+  <div class="tip">
+    Sprawdź: zdanie „Kot znalazł mapę.” jest teraz dwa razy.
+    Kopiowanie nie zabrało go z początku.
+  </div>
+</section>
+
+<section class="step">
+  <h3><span class="number">8</span>Przenieś zdanie: Ctrl + X</h3>
+  <ol>
+    <li>Zaznacz zdanie „W ogrodzie czekał mały robot.”
+      razem z kropką.</li>
+    <li>Naciśnij <kbd>Ctrl</kbd> + <kbd>X</kbd>.
+      Zdanie zniknie z tego miejsca.</li>
+    <li>Kliknij na końcu ostatniego zdania dokumentu.</li>
+    <li>Naciśnij <kbd>Enter</kbd>.</li>
+    <li>Naciśnij <kbd>Ctrl</kbd> + <kbd>V</kbd>.</li>
+  </ol>
+
+  <div class="tip">
+    Zdanie o robocie jest teraz na końcu.
+    Wycięcie i wklejenie przeniosło je w nowe miejsce.
+    Pusty wiersz w środku może na razie zostać.
+  </div>
+
+  <div class="warning">
+    Po wycięciu od razu wklej zdanie.
+    Nie kopiuj w międzyczasie innego tekstu.
+  </div>
+</section>
+
+<section class="step">
+  <h3><span class="number">9</span>Zaznacz cały dokument: Ctrl + A</h3>
+  <ol>
+    <li>Kliknij wewnątrz tekstu w Wordzie.</li>
+    <li>Naciśnij <kbd>Ctrl</kbd> + <kbd>A</kbd>.</li>
+    <li>Zobacz: zaznaczył się cały tekst, także tytuł.</li>
+    <li>Kliknij raz na końcu tekstu,
+      aby usunąć zaznaczenie.</li>
+  </ol>
+
+  <div class="warning">
+    Gdy tekst jest zaznaczony, wpisanie nowych liter
+    zastąpi zaznaczoną treść.
+    W tym ćwiczeniu tylko oglądamy zaznaczenie.
+  </div>
+</section>
+
+<h2>4. Cofnij pomyłkę i zapisz zmiany</h2>
+
+<section class="step">
+  <h3><span class="number">10</span>Cofnij pomyłkę: Ctrl + Z</h3>
+
+  <p>Teraz celowo usuniemy jedno słowo,
+    a potem je przywrócimy.</p>
+
+  <ol>
+    <li>Znajdź w dokumencie słowo „robot”.</li>
+    <li>Kliknij dwa razy w to słowo, aby je zaznaczyć.</li>
+    <li>Naciśnij <kbd>Backspace</kbd>. Słowo zniknie.</li>
+    <li>Naciśnij <kbd>Ctrl</kbd> + <kbd>Z</kbd>.</li>
+    <li>Sprawdź: czy słowo „robot” wróciło?</li>
+  </ol>
+
+  <div class="tip">
+    Udało się! Cofnięcie przywróciło usunięte słowo.
+    Ctrl + Z pomaga naprawiać pomyłki.
+  </div>
+
+  <div class="warning">
+    Naciskaj skrót po jednym razie i sprawdzaj efekt.
+    Kolejne naciśnięcia mogą cofnąć także wcześniejsze czynności.
+  </div>
+</section>
+
+<section class="step">
+  <h3><span class="number">11</span>Zapisz zmiany: Ctrl + S</h3>
+
+  <p>Twój dokument ma już nazwę i swoje miejsce.
+    Teraz zapisz to, co udało Ci się zmienić.</p>
+
+  <ol>
+    <li>Kliknij na końcu tekstu.</li>
+    <li>Naciśnij <kbd>Enter</kbd>.</li>
+    <li>Napisz: „Umiem zapisać swoją pracę!”.</li>
+    <li>Naciśnij <kbd>Ctrl</kbd> + <kbd>S</kbd>.</li>
+  </ol>
+
+  <div class="tip">
+    Zmiany zapisujesz w tym samym pliku.
+    Nie musisz za każdym razem wpisywać jego nazwy.
+  </div>
+
+  <div class="warning">
+    Jeśli pojawi się okno wyboru miejsca zapisu,
+    wybierz „Dokumenty” → swój folder.
+    Wpisz nazwę „MojeCwiczenia” i kliknij „Zapisz”.
+    Jeśli komputer pyta o zastąpienie pliku,
+    poproś nauczyciela o pomoc.
+  </div>
+</section>
+
+<section class="step">
+  <h3><span class="number">12</span>Sprawdź, czy praca się zapisała</h3>
+
+  <ol>
+    <li>Po zapisaniu zamknij dokument.</li>
+    <li>Jeśli Word zapyta o zapisanie zmian,
+      wybierz „Zapisz”.</li>
+    <li>Otwórz Eksplorator plików.</li>
+    <li>Wejdź do „Dokumenty”, a potem do swojego folderu.</li>
+    <li>Kliknij dwa razy plik „MojeCwiczenia”.</li>
+    <li>Sprawdź, czy na końcu jest zdanie:
+      „Umiem zapisać swoją pracę!”.</li>
+  </ol>
+
+  <div class="tip">
+    Zdanie jest na miejscu? Brawo!
+    Twoja praca została zapisana.
+  </div>
+</section>
+
+<h2>⌨️ Moja ściąga</h2>
+
+<div class="cards">
+  <div class="card">
+    <kbd>Ctrl</kbd> + <kbd>A</kbd>
+    <p>Zaznacz wszystko w aktywnym polu lub dokumencie.</p>
+  </div>
+
+  <div class="card">
+    <kbd>Ctrl</kbd> + <kbd>C</kbd>
+    <p>Kopiuj zaznaczony tekst. Oryginał zostaje.</p>
+  </div>
+
+  <div class="card">
+    <kbd>Ctrl</kbd> + <kbd>V</kbd>
+    <p>Wklej tekst ze schowka w miejscu kursora.</p>
+  </div>
+
+  <div class="card">
+    <kbd>Ctrl</kbd> + <kbd>X</kbd>
+    <p>Wytnij zaznaczony tekst, aby go przenieść.</p>
+  </div>
+
+  <div class="card">
+    <kbd>Ctrl</kbd> + <kbd>Z</kbd>
+    <p>Cofnij ostatnią czynność.</p>
+  </div>
+
+  <div class="card">
+    <kbd>Ctrl</kbd> + <kbd>S</kbd>
+    <p>Zapisz swoją pracę.</p>
+  </div>
+</div>
+
+<h2>✅ Moja lista sukcesów</h2>
+
+<ul class="checklist">
+  <li><label><input type="checkbox">
+    Mam dokument w swoim folderze w Dokumentach.</label></li>
+  <li><label><input type="checkbox">
+    Umiem zaznaczyć cały tekst.</label></li>
+  <li><label><input type="checkbox">
+    Umiem kopiować i wklejać tekst.</label></li>
+  <li><label><input type="checkbox">
+    Umiem wyciąć zdanie i przenieść je w inne miejsce.</label></li>
+  <li><label><input type="checkbox">
+    Umiem cofnąć pomyłkę.</label></li>
+  <li><label><input type="checkbox">
+    Umiem zapisać zmiany i ponownie otworzyć dokument.</label></li>
+</ul>
+
+<div class="intro">
+  🎉 Brawo! Potrafisz już tworzyć dokument,
+  pracować z tekstem i zapisywać swoją pracę.
+</div>
+
+</main>
+</body>
+</html>
